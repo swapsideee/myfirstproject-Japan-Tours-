@@ -36,6 +36,21 @@ body {
 
 .main-information {
     font-size: 17px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.images-main {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.sidebar {
+    margin-left: 100px;
 }
 
 .sidebar {
@@ -68,9 +83,18 @@ body {
     color: rgb(110, 181, 240);
 }
 
-.sidebar {
-    margin-left: 100px;
-}
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
 
 .card a {
     text-decoration: none;
@@ -84,6 +108,11 @@ body {
     color: black;
 }
 
+.btn {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
 h1 {
     text-align: center;
     font-size: 3.5em;
@@ -95,12 +124,6 @@ h4 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
-}
-
-.images-main {
-    padding-top: 30px;
-    max-width: 800px;
-    margin-left: 30px;
 }
 
 .t-color,
@@ -118,4 +141,25 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        margin-right: 1em;
+    }
+
+}
+
+@media (max-width: 1440px) {
+    .sidebar {
+        font-size: 14px;
+        margin-inline-start: auto;
+        margin-left: 0.7em;
+    }
 }
