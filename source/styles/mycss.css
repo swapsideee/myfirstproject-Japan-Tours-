@@ -150,8 +150,8 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    .sidebar {
-        margin-right: 1em;
+    .sidebar a {
+        font-size: 15.5px;
     }
 
 }
